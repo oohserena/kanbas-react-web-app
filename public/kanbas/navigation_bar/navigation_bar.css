@@ -1,0 +1,109 @@
+/* Bootstrap Overrides */
+
+/* Kanbas Navigation */
+.wd-kanbas-navigation {
+    width: 85px;
+}
+
+.wd-kanbas-navigation .list-item {
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    border-radius:0;
+}
+
+
+.wd-kanbas-navigation .list-item.active {
+    color: rgb(179, 32, 32);
+    background-color: white;
+    border-color: white;
+}
+
+.text {
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.icon-active {
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    font-size: 2em; 
+    color: lightgray; 
+    text-align: center;
+}
+
+.icon {
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    font-size: 1.5em; 
+    color: rgb(179, 32, 32); 
+    text-align: center;
+}
+
+.neu-icon {
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 3.5em; 
+    color: rgb(179, 32, 32); 
+    text-align: center;
+    height: 100%;
+}
+
+
+/* Account Navigation */
+.wd-account-navigation .list-group {
+    text-align: left;
+}
+
+.wd-account-navigation .list-item {
+    width: 200px;
+    color: rgb(179, 32, 32);
+    background-color: var(--bs-list-group-bg);
+    border: none;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.wd-account-navigation .list-item.active {
+    color: black;
+    background-color: white;
+    border-color: white;
+    border-left: 2px solid black;
+}
+
+/* Courses Navigation */
+.wd-courses-navigation .list-group {
+    text-align: left;
+    border-radius:0;
+    
+}
+
+.wd-courses-navigation .list-item {
+    width: 200px;
+    color: rgb(179, 32, 32);
+    background-color: var(--bs-list-group-bg);
+    border: none;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius:0;
+    font-size: 13px;
+}
+
+.wd-courses-navigation .list-item.active {
+    color: black;
+    background-color: white;
+    border-color: white;
+    border-left: 2px solid black;
+}
+

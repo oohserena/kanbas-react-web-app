@@ -1,0 +1,16 @@
+.list-group{
+    border-radius: 0px;}
+
+.list-group .list-item-secondary{
+    font-weight: bold;
+}
+
+.btn{
+    font-size: 90%;
+}
+
+.fixed-width-btn {
+    width: 220px; 
+    text-align: left;
+    margin-bottom: 5px;
+}

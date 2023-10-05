@@ -1,0 +1,125 @@
+.details-td {
+    padding-left: 25px;
+}
+
+.details-header {
+    font-family: "Helvetica";
+    font-weight: lighter;
+}
+
+.details-label {
+    font-size: 0.90em;
+    font-weight: bold;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    
+    width: 150px;
+    font-family: "Helvetica";
+}
+
+.details-image-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+.details-normal-text {
+    text-align: left;
+    font-size: 0.90em;
+    font-family: "Helvetica";
+}
+
+.details-red-text {
+    text-align: left;
+    color: rgb(179, 32, 32);
+    font-size: 0.90em;
+}
+
+.details-text-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 0px;
+    font-family: "Helvetica";
+    /* font-size: small; */
+}
+
+.details-dropdown-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+.details-course-template-checkbox-blurred {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.details-course-template-text {
+    color: lightgrey;
+    font-family: "Helvetica";
+}
+
+.details-time-zone-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+.details-select-dropdown {
+    width: 350px;
+    padding: 10px 10px;
+    font-family: "Helvetica";
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+.details-participation-container {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+.details-participation-container-elements {
+    display: flex;
+    flex-direction: column;
+}
+
+.details-participation-item {
+    padding: 10px 0px;
+}
+
+.details-participation-date-picker {
+    width: 250px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    margin: 5px 0px;
+}
+
+.details-participation-date-picker-label {
+    font-weight: bold;
+    font-family: "Helvetica";
+}
+
+input[type="date"]:in-range::-webkit-datetime-edit-year-field, 
+input[type="date"]:in-range::-webkit-datetime-edit-month-field, 
+input[type="date"]:in-range::-webkit-datetime-edit-day-field, 
+input[type="date"]:in-range::-webkit-datetime-edit-text { 	
+    color: transparent; 
+}
+
+.details-participation-checkbox-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+.details-participation-checkbox-text {
+    padding-left: 5px;
+    padding-top: 1px;
+}

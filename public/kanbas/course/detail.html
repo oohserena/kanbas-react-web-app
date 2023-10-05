@@ -1,0 +1,457 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Course Detail</title> 
+    <link rel="stylesheet" href="../styling/sidebar.css">
+    <link rel="stylesheet" href="../styling/sub-sidebar.css">
+    <link rel="stylesheet" href="../styling/detail.css">
+    <link rel="stylesheet" href="../styling/courses.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+</head>
+
+<body>
+    <table width="100%">
+        <tr>
+            <td valign="top" class="sidebar-td">
+                <ul class="sidebar-list">
+                    <li>
+                        <a href="../profile/index.html">
+                            <div class="sidebar-item-container">
+                                <span class="fa-stack fa-1x">
+                                    <i class="fas fa-circle fa-stack-2x account-circle-icon"></i>
+                                    <i class="fas fa-user fa-stack-1x account-icon"></i>
+                                </span>
+                                <span class="sidebar-item">Account</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../dashboard/index.html">
+                            <div class="sidebar-item-container">
+                                <i class="fas fa-gauge-simple-med fa-2x sidebar-icon"></i>
+                                <span class="sidebar-item">Dashboard</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../course/home.html">
+                            <div class="sidebar-item-container active-sidebar-item-container">
+                                <i class="fas fa-book fa-2x sidebar-icon"></i>
+                                <span class="sidebar-item active-sidebar-item">Courses</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="sidebar-item-container">
+                                <i class="fas fa-calendar fa-2x sidebar-icon"></i>
+                                <span class="sidebar-item">Calendar</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="sidebar-item-container">
+                                <i class="fas fa-inbox fa-2x sidebar-icon"></i>
+                                <span class="sidebar-item">Inbox</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="sidebar-item-container">
+                                <i class="fas fa-clock fa-2x sidebar-icon"></i>
+                                <span class="sidebar-item">History</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="sidebar-item-container">
+                                <i class="fas fa-tv fa-2x sidebar-icon"></i>
+                                <span class="sidebar-item">Studio</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="sidebar-item-container">
+                                <i class="fas fa-arrow-right-to-bracket fa-2x sidebar-icon"></i>
+                                <span class="sidebar-item">Commons</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="sidebar-item-container">
+                                <i class="fas fa-circle-question fa-2x sidebar-icon"></i>
+                                <span class="sidebar-item">Help</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </td>
+            <!--second column-->
+            <td valign="top" class="sub-sidebar-td">
+                <ul class="sub-sidebar-list">
+                    <li>
+                        <div class="sub-sidebar-course-container">
+                            <span class="sub-sidebar-course-container-text">202410_1 Fall 2023 Semester overflow</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/kanbas/home.html">
+                            <div class="sub-sidebar-item-container">
+                                <span class="sub-sidebar-text">Home</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="sub-sidebar-item-container">
+                                <span class="sub-sidebar-text">Modules</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="sub-sidebar-item-container">
+                                <span class="sub-sidebar-text">Piazza</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="sub-sidebar-item-container">
+                                <span class="sub-sidebar-text">Zoom Meetings</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/kanbas/assignments/index.html">
+                            <div class="sub-sidebar-item-container">
+                                <span class="sub-sidebar-text">Assignments</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="sub-sidebar-item-container">
+                                <span class="sub-sidebar-text">Quizzes</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/kanbas/grades.html">
+                            <div class="sub-sidebar-item-container">
+                                <span class="sub-sidebar-text">Grades</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="sub-sidebar-item-container">
+                                <span class="sub-sidebar-text">People</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="sub-sidebar-item-container">
+                                <span class="sub-sidebar-text">Panopto Video</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="sub-sidebar-item-container">
+                                <span class="sub-sidebar-text">Discussions</span>
+                                <i class="fas fa-eye-slash sub-sidebar-eye-slash"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="sub-sidebar-item-container">
+                                <span class="sub-sidebar-text">Announcements</span>
+                                <i class="fas fa-eye-slash sub-sidebar-eye-slash"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="sub-sidebar-item-container">
+                                <span class="sub-sidebar-text">Pages</span>
+                                <i class="fas fa-eye-slash sub-sidebar-eye-slash"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="sub-sidebar-item-container">
+                                <span class="sub-sidebar-text">Files</span>
+                                <i class="fas fa-eye-slash sub-sidebar-eye-slash"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="sub-sidebar-item-container">
+                                <span class="sub-sidebar-text">Rubrics</span>
+                                <i class="fas fa-eye-slash sub-sidebar-eye-slash"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="sub-sidebar-item-container">
+                                <span class="sub-sidebar-text">Qutcomes</span>
+                                <i class="fas fa-eye-slash sub-sidebar-eye-slash"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="sub-sidebar-item-container">
+                                <span class="sub-sidebar-text">Collaborations</span>
+                                <i class="fas fa-eye-slash sub-sidebar-eye-slash"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="sub-sidebar-item-container">
+                                <span class="sub-sidebar-text">Syllabus</span>
+                                <i class="fas fa-eye-slash sub-sidebar-eye-slash"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="selected-sub-sidebar-item-container">
+                                <span class="selected-sub-sidebar-text">Settings</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </td>
+
+            <td valign="top" class="details-td">
+                
+                <ul class="courses-header-list">
+                    <li>
+                        <a href="#">                            
+                            <div class="selected-courses-header-item-container">
+                                <span class="selected-courses-header-item-text">
+                                    Course Details
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">                            
+                            <div class="courses-header-item-container">
+                                <span class="courses-header-item-text">
+                                    Sections
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">                            
+                            <div class="courses-header-item-container">
+                                <span class="courses-header-item-text">
+                                    Navigation
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">                            
+                            <div class="courses-header-item-container">
+                                <span class="courses-header-item-text">
+                                    Apps
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">                            
+                            <div class="courses-header-item-container">
+                                <span class="courses-header-item-text">
+                                    Feature Options
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">                            
+                            <div class="courses-header-item-container">
+                                <span class="courses-header-item-text">
+                                    Integrations
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                
+                <h1 class="details-header">Course Details</h1>
+
+                <div class="details-image-container">
+                    <label class="details-label">Image: </label>
+                    <img width="400px" height="200px"/>
+                </div>
+                
+                <div class="details-text-container">
+                    <label class="details-label">Name: </label>
+                    <span class="details-normal-text"> CS4550 12631 Web Development SEC 01 Fall 2023 [BOS-1-TR]</span>
+                </div>
+                
+                <div class="details-text-container">
+                    <label class="details-label">Course Code: </label>
+                    <span class="details-normal-text"> CS4550 12631.202410</span>
+                </div>
+                
+                <div class="details-text-container">
+                    <label class="details-label">Blueprint Course: </label>
+                    <span class="details-normal-text"> No</span>
+                </div>
+
+                <div class="details-dropdown-container">
+                    <label class="details-label">Course Template: </label>
+                    <input class="details-course-template-checkbox-blurred" type="checkbox" id="textEntry" />
+                    <label class="details-course-template-text" for="textEntry">Enable course as a Course Template</label>
+                </div>
+
+                <div class="details-time-zone-container">
+                    <label class="details-label">Time Zone: </label>
+                    <select class="details-select-dropdown">
+                        <option>
+                            Eastern Time(US & Canada)(-05:00/-04:00)
+                        </option>
+                    </select>
+                </div>
+                
+                <div class="details-text-container">
+                    <label class="details-label">SIS ID: </label>
+                    <span class="details-normal-text">CS4550.12631.202410</span>
+                </div>
+                
+                <div class="details-text-container">
+                    <label class="details-label">Subaccount: </label>
+                    <span class="details-normal-text details-red-text">CS Undergrad</span>
+                </div>
+                
+                <div class="details-text-container">
+                    <label class="details-label">Term </label>
+                    <span class="details-normal-text">202410_1 Fall Semester Full Term</span>
+                </div>
+
+                <div class="details-participation-container">
+                    <label class="details-label">Participation: </label>
+                    <div class="details-participation-container-elements">
+                        <div class="details-participation-item">
+                            <select class="details-select-dropdown ">
+                                <option>Term</option>
+                            </select>
+                        </div>
+                        <span class="details-participation-item">Course participation is limited to <b>term</b> start and end dates</span>
+                        <label class="details-participation-item details-participation-date-picker-label">Start</label>
+                        <input class="details-participation-item details-participation-date-picker" type="date"/>
+                        <label class="details-participation-item details-participation-date-picker-label">End</label>
+                        <input class="details-participation-item details-participation-date-picker" type="date"/>
+                        <div class="details-participation-checkbox-container details-participation-item">
+                            <input type="checkbox" />
+                            <span class="details-normal-text details-participation-checkbox-text">Restrict Students from viewing course before term start date</span>
+                        </div>
+                        <div class="details-participation-checkbox-container details-participation-item">
+                            <input type="checkbox" />
+                            <span class="details-normal-text details-participation-checkbox-text">Restrict Students from viewing course after term end date</span>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <br /><br />
+
+                <label>Default due time:  </label>
+                <select>
+                    <option>Account default (11:59pm)</option>
+                </select><br />
+                <p>This influences the user for setting due dates. It does not change the time due for any existing assignments.</p>
+                <br /><br />
+
+                <label>Languages</label>
+                <select>
+                    <option>Not set (user-configurable, defaults to English</option>
+                </select><br />
+                <p>This will override any user/system language preferemces.</p>
+                <br />
+
+                <label>File Storage</label>
+                <input type="text" />
+                <br /><br />
+
+                <label>Large Course: </label>
+                <input type="checkbox" id="textEntry" />
+                <label for="textEntry">Launch SpeedGrader Filtered by Student Group</label><br />
+                <br />
+
+                <label>Grading Scheme: </label>
+                <input type="checkbox" id="textEntry" />
+                <label for="textEntry">Enable course grading scheme</label><br />
+                <br /><br />
+
+                <label>License</label>
+                <select>
+                    <option>Private (Copyrighted)</option>
+                </select><br />
+                <br />
+
+                <label>File Copyright: </label>
+                <input type="checkbox" id="textEntry" />
+                <label for="textEntry">Copyright and license information must be provided for files before they are published</label><br />
+                <br />
+
+                <label>Visibility: </label>
+                <p>If you need to make your course public please contact you administrator/support.</p>
+                <select>
+                    <option>Course</option>
+                </select><br /><br />
+                <input type="checkbox" id="textEntry" />
+                <label for="textEntry">Include this course in the public course index</label><br />
+
+
+                <label>Format: </label>
+                <select>
+                    <option>
+                        On-Campus
+                    </option>
+                </select>
+                <br /><br />
+
+                <label>Mastery Paths: </label>
+                <input type="checkbox" id="textEntry" />
+                <label for="textEntry">Enable individual learning paths for students based on assessment</label><br />
+                <br />
+
+                <label>Description: </label>
+                <textarea width="50" height="50"></textarea>
+                <br /><br />
+
+                <button>Update Course Details</button>
+
+
+
+    
+            </td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>

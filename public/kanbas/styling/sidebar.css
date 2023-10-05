@@ -1,0 +1,65 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-td {
+    display: flex;
+}
+
+.sidebar-list {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 75px;
+    
+    background-color: black;
+    /* padding-bottom: 5px; */
+}
+
+.active-sidebar-item-container {
+    background-color: white;
+}
+
+
+.sidebar-item {
+    margin: 5px;
+    display: flex;
+    color: white;
+    font-family: "Helvetica";
+    font-size: small;
+}
+
+.active-sidebar-item {
+    margin: 5px;
+    display: flex;
+    color: rgb(179, 32, 32);
+    font-family: "Helvetica";
+    font-size: small;
+}
+
+.sidebar-icon {
+    margin-top: 5px;
+    color: rgb(179, 32, 32);
+}
+
+.account-icon {
+    margin-top: 5px;
+    color: grey;
+}
+
+.account-circle-icon {
+    margin-top: 5px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}

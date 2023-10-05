@@ -1,0 +1,46 @@
+tr {
+    display: flex;
+}
+
+.courses-header-list {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    
+    margin-top: 10px;
+    padding: 0px;
+}
+
+.courses-header-item-container {
+    padding: 15px 20px;
+    /* padding-bottom: 15px; */
+    border-bottom: 1px solid lightgrey;
+    
+}
+
+.courses-header-item-text {
+    font-family: "Helvetica";
+    /* font-size: small; */
+    color: rgb(179,32,32);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.selected-courses-header-item-container {
+    padding: 15px 20px;
+    /* padding-bottom: 15px; */
+    border-top: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    
+}
+
+.selected-courses-header-item-text {
+    font-family: "Helvetica";
+    color: black;
+    overflow: hidden;
+    white-space: nowrap;
+    /* font-size: small; */
+    
+}

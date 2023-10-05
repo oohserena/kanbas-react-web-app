@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Assignments</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link href="../../lib/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="../../lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../course/course.css" rel="stylesheet" />
+    <link href="../../kanbas/navigation_bar/navigation_bar.css" rel="stylesheet" />
+    <link href="../../kanbas/assignments/assignments.css" rel="stylesheet" />
+    <link href="../../kanbas/assignments/edit_assignments.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+    <body>
+        <table class="table">
+            <tr>
+                <td style="padding-left: 0px; padding-top: 0px"
+                    class="wd-kanbas-navigation">
+                    <div class="list-group">
+                        <a href="#" class="list-item list-item-action">
+                            <i class="neu-icon fa-solid fa-n"></i>
+                        </a>
+                    </div>
+
+                    <a href="../profile/index.html" class="list-item list-item-action">
+                        <i class="icon-active fas fa-user-circle"></i>
+                        <p class="text">Acoount</p>
+                      </a>
+          
+                      <a href="../dashboard/index.html" class="list-item list-item-action">
+                        <i class="icon fas fa-tachometer-alt"></i>
+                        <p class="text">Dashboard</p>
+                      </a>
+          
+                      <a
+                        href="../course/home.html"
+                        class="list-item list-item-action active"
+                        aria-current="true"
+                      >
+                        <i class="icon fas fa-book"></i>
+                        <p class="text">Courses</p>
+                      </a>
+                      <a href="#" class="list-item list-item-action">
+                        <i class="icon far fa-calendar-alt"></i>
+                        <p class="text">Calendar</p>
+                      </a>
+                      <a href="#" class="list-item list-item-action">
+                        <i class="icon fas fa-envelope-open-text"></i>
+                        <p class="text">Inbox</p>
+                      </a>
+                      <a href="#" class="list-item list-item-action">
+                        <i class="icon fas fa-clock"></i>
+                        <p class="text">History</p>
+                      </a>
+                      <a href="#" class="list-item list-item-action">
+                        <i class="icon fas fa-network-wired"></i>
+                        <p class="text">Studio</p>
+                      </a>
+                      <a href="#" class="list-item list-item-action">
+                        <i class="icon fas fa-chevron-circle-right"></i>
+                        <p class="text">Commons</p>
+                      </a>
+                      <a href="#" class="list-item list-item-action">
+                        <i class="icon fas fa-question-circle"></i>
+                        <p class="text">Help</p>
+                      </a>
+                    </div>  
+                </td>
+
+                <td>
+                    <table>
+                        <tr>
+                            <div class="header d-none d-sm-block">
+                              <nav class="navbar d-flex justify-content-between">
+                                <nav
+                                  style="--bs-breadcrumb-divider: '>'"
+                                  aria-label="breadcrumb"
+                                >
+                                  <ol class="breadcrumb">
+                                    <li>
+                                      <i
+                                        class="heading-icon fas fa-bars"
+                                        style="
+                                          margin-left: 10px;
+                                          margin-right: 10px;
+                                          color: rgb(179, 32, 32);
+                                        "
+                                      ></i>
+                                    </li>
+              
+                                    <li class="breadcrumb-item">
+                                      <a href="#" style="color: rgb(179, 32, 32); text-decoration: none"
+                                        >CS5610.11744.202310</a
+                                      >
+                                    </li>
+                                    <li class="breadcrumb-item" aria-current="page" style="color: rgb(179, 32, 32); text-decoration: none;">
+                                      Assignments
+                                    </li>
+
+                                    <li class="breadcrumb-item active">
+                                        A1-ENV+HTML
+                                    </li>
+                                  </ol>
+
+                                  
+                                </nav>
+                              </nav>
+                              <hr style="margin-top: -5px" />
+                            </div>
+                        </tr>
+                        
+                        <tr>
+                            <td class="d-none d-sm-table-row">
+                                <div
+                                  class="wd-courses-navigation list-group"
+                                  style="margin-left: -25px"
+                                >
+                                  <p
+                                    style="
+                                      margin-left: 40px;
+                                      font-size: xx-small;
+                                      font-style: italic;
+                                      color: gray;
+                                    "
+                                  >
+                                    202310_2 Fall 2022 Semest...
+                                  </p>
+                                
+                                <a href="#" class="list-item list-item-action">
+                                Home
+                                </a>
+                                <a href="#" class="list-item list-item-action">
+                                Piazza
+                                </a>
+                                <a href="#" class="list-item list-item-action">
+                                Zoom Meetings
+                                </a>
+                                <a href="#" class="list-item list-item-action">
+                                Modules
+                                </a>
+                                <a href="#" class="list-item list-item-action">
+                                Quizes
+                                </a>
+                                <a
+                                href="#"
+                                class="list-item list-item-action active"
+                                aria-current="true"
+                                >
+                                Assignments
+                                </a>
+            
+                                <a href="#" class="list-item list-item-action">
+                                Grades
+                                </a>
+                                <a href="#" class="list-item list-item-action">
+                                People
+                                </a>
+                                <a href="#" class="list-item list-item-action">
+                                Microsoft Teams Meetings
+                                </a>
+                                <a href="#" class="list-item list-item-action">
+                                FACT Reporting and Photo Roster
+                                </a>
+                                <a
+                                href="#"
+                                class="list-item list-item-action d-flex justify-content-between"
+                                >
+                                Discussions
+                                <i class="fas fa-eye-slash" style="color: black"></i>
+                                </a>
+                                <a
+                                href="#"
+                                class="list-item list-item-action d-flex justify-content-between"
+                                >
+                                Announcements
+                                <i class="fas fa-eye-slash" style="color: black"></i
+                                ></a>
+                                <a
+                                href="#"
+                                class="list-item list-item-action d-flex justify-content-between"
+                                >
+                                Pages <i class="fas fa-eye-slash" style="color: black"></i>
+                                </a>
+                                <a
+                                href="#"
+                                class="list-item list-item-action d-flex justify-content-between"
+                                >
+                                Files <i class="fas fa-eye-slash" style="color: black"></i>
+                                </a>
+                                <a
+                                href="#"
+                                class="list-item list-item-action d-flex justify-content-between"
+                                >
+                                Rubrics
+                                <i class="fas fa-eye-slash" style="color: black"></i>
+                                </a>
+                                <a
+                                href="#"
+                                class="list-item list-item-action d-flex justify-content-between"
+                                >
+                                Outcomes
+                                <i class="fas fa-eye-slash" style="color: black"></i>
+                                </a>
+                                <a
+                                href="#"
+                                class="list-item list-item-action d-flex justify-content-between"
+                                >
+                                Collaborations
+                                <i class="fas fa-eye-slash" style="color: black"></i>
+                                </a>
+                                <a
+                                href="#"
+                                class="list-item list-item-action d-flex justify-content-between"
+                                >
+                                Syllabus
+                                <i class="fas fa-eye-slash" style="color: black"></i>
+                                </a>
+                            </div>
+                        </td>
+                        <td style="vertical-align: top; width: 100%;">
+                            <div class="float-end custom-float-end">
+                                <i class="fas fa-check-circle"ß
+                                   style="color: green; padding-top:2px"></i>
+                                <span style="color: green; font-size: 12px;">Published</span>
+
+                                <button type="button" class="btn btn-light">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+                            <br />
+                            <hr style="margin-top: 30px" />
+
+                            <div style="display: flex; flex-direction: column; text-align: left;">
+                                <label for="assignment-name" class="form-label" style="color: grey; font-size: 15px;">Assignment Name</label><br />
+                                <input type="text" class="form-control" id="assignment-name" placeholder="A1 - ENV + HTML" /><br />
+                            
+                                <textarea class="form-control" id="example-textarea1" rows="4" style="color: grey;">This assignment describes how to install the development environment for creating and working with Web applications.</textarea><br />
+                            </div>
+
+                            <div class="edit-body-column">
+
+                                <div class="edit-details-container">
+                                        <label class="edit-label">Points</label>
+                                        <div class="edit-detail-item">
+                                            <input class="edit-text" placeholder="100" />
+                                        </div>
+                                </div>
+                                <div class="edit-details-container">
+                                    <label class="edit-label">Assignment Group</label>
+                                    <div class="edit-detail-item">
+                                        <select class="edit-select-dropdown">
+                                            <option>
+                                                ASSIGNMENTS
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="edit-details-container">
+                                    <label class="edit-label">Display Grade as</label>
+                                    <div class="edit-detail-item">
+                                        <select class="edit-select-dropdown">
+                                            <option>
+                                                Percentage
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="edit-details-container">
+                                    <label class="edit-label"></label>
+                                        <div class="edit-checkbox-container">
+                                            <input type="checkbox"> 
+                                            <span class="edit-checkbox-text">Do not count this assignment towards the final grades</span>
+                                        </div>
+                                </div>
+                                <div class="submission-type-container">
+                                    <label class="edit-label">Submission Type</label>
+                                    <div class="submission-type-items-container">
+                                        <div class="submission-type-items-border-container">
+
+                                            <div class="submission-type-item-container">
+                                                <select class="edit-select-dropdown submission-type-dropdown">
+                                                    <option>
+                                                        Online
+                                                    </option>
+                                                </select>
+                                            </div>
+        
+                                            <span class="edit-text-big submission-type-item-container">Online Entry Options</span>
+    
+                                            <div class="edit-checkbox-container submission-type-item-container">
+                                                <input type="checkbox"> 
+                                                <span class="edit-checkbox-text1">Text Entry</span>
+                                            </div>
+                                            
+                                            <div class="edit-checkbox-container submission-type-item-container">
+                                                <input type="checkbox"> 
+                                                <span class="edit-checkbox-text1">Website URL</span>
+                                            </div>
+                                            <div class="edit-checkbox-container submission-type-item-container">
+                                                <input type="checkbox"> 
+                                                <span class="edit-checkbox-text1">Media Recordings</span>
+                                            </div>
+                                            <div class="edit-checkbox-container submission-type-item-container">
+                                                <input type="checkbox"> 
+                                                <span class="edit-checkbox-text1">Student Annotations</span>
+                                            </div>
+                                            <div class="edit-checkbox-container submission-type-item-container">
+                                                <input type="checkbox"> 
+                                                <span class="edit-checkbox-text1">File Uploads</span>
+                                            </div>
+                                        </div>
+    
+    
+                                    </div>
+                                </div>
+    
+                                <div class="submission-type-container">
+                                    <label class="edit-label">Assign</label>
+                                    <div class="submission-type-items-container">
+                                        <div class="submission-type-items-border-container">
+                                            <div class="submission-type-item-container">
+                                                <span class="edit-text-big">Assign to</span><br />
+                                                <input class="edit-assign-to-text" placeholder="Everyone">
+                                            </div>
+
+                                            <div class="submission-type-item-container">
+                                                <span class="edit-text-big">Due</span><br />
+                                                <input class="edit-assign-to-text" type="date" />
+
+
+                                            </div>
+
+                                            <div class="assignment-double-date">
+                                                <div class="assign-available-container assignment-double-date-width">
+                                                    <span class="edit-text-big">Available from</span><br />
+                                                    <input class="edit-assign-to-text-date" type="date" />
+                                                </div>
+                                                <div class="assign-available-container assignment-double-date-width">
+                                                    <span class="edit-text-big">Until</span><br />
+                                                    <input class="edit-assign-to-text-date" type="date" />
+
+                                                </div>
+                                            </div>
+
+
+                                            <button class="btn custom-btn">+ Add</button>
+
+
+
+                                          
+        
+                
+    
+                                            
+                                           
+                                        </div>
+    
+    
+                                    </div>
+                                </div>
+                                        
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <hr style="margin-top: 30px" />
+
+                            <input type="checkbox"> 
+                            <span class="edit-checkbox-text1">Notify users that this content has changed</span><br />
+
+                            <button class="btn custom-btn2">Cancel</button>
+                            <button class="btn custom-btn3">Save</button>
+
+
+
+
+                                
+
+                        
+                            
+
+
+
+
+                        
+                        </td>
+                              
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
