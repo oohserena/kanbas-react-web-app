@@ -16,7 +16,7 @@ function Labs() {
         >
           Assignment 3
         </Link>
-        {/* <Link
+        <Link
           to="/Labs/a4"
           className={`nav-link ${pathname.includes("a4") ? "active" : ""}`}
         >
@@ -27,7 +27,7 @@ function Labs() {
           className={`nav-link ${pathname.includes("a5") ? "active" : ""}`}
         >
           Assignment 5
-        </Link> */}
+        </Link>
       </div>
       <Routes>
         {/* <Route path="/" element={<Assignment3 />} /> */}
