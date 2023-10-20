@@ -1,13 +1,14 @@
 import React from "react";
 import { useParams, Routes, Route, Navigate, useLocation } from "react-router-dom";
-import JsonPre from "../../Labs/a3/JsonPre";
 import db from "../Database";
 import CourseNavigation from "./CourseNavigation";
+import CourseLocation from "./CourseLocation";
 import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
+
 
 function Courses() {
   const { courseId } = useParams();
@@ -16,7 +17,7 @@ function Courses() {
   const course = db.courses.find((course) => course._id === courseId);
   return (
     <div>
-      <h1> {course.name} / {screen}</h1>
+      <CourseLocation />
       <CourseNavigation />
       <div>
         <div

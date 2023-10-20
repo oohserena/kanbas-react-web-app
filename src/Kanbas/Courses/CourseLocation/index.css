@@ -1,0 +1,36 @@
+
+.course-location {
+    display: flex;
+    padding-left: 30px;
+}
+.course-location .icon1 {
+    padding-left: 15px;
+    font-size: 30px;
+    color: rgb(174, 21, 21);
+    margin: 0 10px;
+
+}
+
+.course-location .icon2 {
+    padding-left: 15px;
+    font-size: 20px;
+    color: grey;
+    margin:8px 10px;
+
+}
+
+.course-location .text1 {
+    margin-top: 10px;
+    padding-left: 15px;
+    font-size: 20px;
+    color: rgb(174, 21, 21);
+}
+
+.course-location .text2 {
+    margin-top: 5px;
+    padding-left: 10px;
+    font-size: 25px;
+    color: black;
+
+}
+
