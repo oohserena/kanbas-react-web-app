@@ -1,0 +1,12 @@
+.kanbas-flex-row-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.kanbas-flex-grow-1 {
+    flex-grow: 1;
+}
+
+.kanbas-bg-color-black {
+    background-color: black;
+}
