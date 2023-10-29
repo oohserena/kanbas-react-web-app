@@ -1,0 +1,29 @@
+.gray-button {
+    min-width: 220px;
+    background-color: rgb(252, 249, 249);
+    color: rgb(83, 80, 80);
+    border: 1px solid gray;
+    margin: 5px;
+    text-align: left; /* Add margin for spacing between buttons */
+  }
+
+  .divider {
+    width: 220px;
+  }
+
+  .to-do-title {
+    color: rgb(62, 60, 60);
+    font-size: 1.2em;
+  }
+
+  .to-do-button {
+    background-color: white;
+    color: rgb(174, 21, 21);
+    border: white;
+    margin: 5px;
+    text-align: left;
+  }
+
+  .icon-gray {
+    color: rgb(134, 129, 129);
+  }

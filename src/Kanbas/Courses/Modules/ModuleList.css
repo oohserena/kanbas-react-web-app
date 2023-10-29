@@ -1,0 +1,24 @@
+/* ModuleList.css */
+.button-container {
+    text-align: center;
+  }
+  
+  .gray-button {
+    min-width: 100px; 
+    background-color: rgb(252, 249, 249);
+    color: black;
+    border: 1px solid gray;
+    margin: 5px;
+    text-align: left;
+  }
+  
+  .red-button {
+    min-width: 100px; 
+    background-color: rgb(174, 21, 21);
+    color: white;
+    border: 1px solid gray;
+    margin: 5px;
+    text-align: left; /* Add margin for spacing between buttons */
+  }
+
+  

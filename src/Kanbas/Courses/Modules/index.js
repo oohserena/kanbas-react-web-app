@@ -1,9 +1,15 @@
 import ModuleList from "./ModuleList";
+import Status from "../Status/index.js";
+
 function Modules() {
   return (
-    <div>
-      <h2>Modules</h2>
-      <ModuleList />
+    <div className="row">
+        <div className="col-md-8">
+            <ModuleList />
+        </div>
+        <div className="col-md-4">
+            <Status />
+        </div>
     </div>
   );
 }
