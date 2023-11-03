@@ -11,14 +11,19 @@ import { CiCircleRemove } from "react-icons/ci"
 function Status() {
     return (
         <div>
-            <button className="gray-button"><BsFileArrowUp /> Import Existing Content</button><br />
-            <button className="gray-button"><AiOutlineImport /> Import from Commons</button><br />
-            <button className="gray-button"><PiTargetLight /> Choose Home Page</button><br />
-            <button className="gray-button"><BsFillBarChartFill /> View Course Stream</button><br />
-            <button className="gray-button"><GrAnnounce /> New Announcement</button><br />
-            <button className="gray-button"><BsFillBarChartFill /> New Analytics</button><br />
-            <button className="gray-button"><IoIosNotificationsOutline /> View Course Notifications</button><br />
-            <br />
+            <hr className="divider"/>
+
+            <div className="buttons">
+                <button className="gray-button"><BsFileArrowUp /> Import Existing Content</button><br />
+                <button className="gray-button"><AiOutlineImport /> Import from Commons</button><br />
+                <button className="gray-button"><PiTargetLight /> Choose Home Page</button><br />
+                <button className="gray-button"><BsFillBarChartFill /> View Course Stream</button><br />
+                <button className="gray-button"><GrAnnounce /> New Announcement</button><br />
+                <button className="gray-button"><BsFillBarChartFill /> New Analytics</button><br />
+                <button className="gray-button"><IoIosNotificationsOutline /> View Course Notifications</button><br />
+            </div>
+
+            
 
             <h4 className="to-do-title">To Do</h4>
             <hr className="divider"/> 

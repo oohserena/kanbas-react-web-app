@@ -6,19 +6,26 @@ import CourseLocation from "./CourseLocation";
 import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
-import AssignmentEditor from "./Assignments/AssignmentEditor";
+import AssignmentsEditor from "./Assignments/AssignmentsEditor";
 import Grades from "./Grades";
 
 
-function Courses() {
+
+function Courses({ courses }) {
   const { courseId } = useParams();
-  const {pathname} = useLocation();
-  const [empty, kanbas, courses, id, screen] = pathname.split("/");
-  const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => course._id === courseId);
+
+  if (!course) {
+    // Handle the case when the course is not found
+    return <Navigate to="/not-found" />;
+  }
+
   return (
     <div>
-      <CourseLocation />
+      <CourseLocation courses={courses}/>
+      
       <CourseNavigation />
+      
       <div>
         <div
           className="overflow-y-scroll position-fixed bottom-0 end-0"
@@ -32,10 +39,7 @@ function Courses() {
             <Route path="Home" element={<Home/>} />
             <Route path="Modules" element={<Modules/>} />
             <Route path="Assignments" element={<Assignments/>} />
-            <Route
-              path="Assignments/:assignmentId"
-              element={<AssignmentEditor/>}
-            />
+            <Route path="/Kanbas/Courses/:courseId/Assignments/Editor/:assignmentId" element={<AssignmentsEditor />} />
             <Route path="Grades" element={<Grades/>} />
           </Routes>
         </div>

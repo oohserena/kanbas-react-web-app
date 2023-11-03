@@ -1,0 +1,132 @@
+
+
+  /* .to-do-title {
+    color: rgb(62, 60, 60);
+    font-size: 1.2em;
+  } */
+
+
+  .to-do-button {
+    background-color: white;
+    color: rgb(174, 21, 21);
+    border: white;
+    margin: 5px;
+    text-align: left;
+    font-size: 0.9em;
+  }
+
+  .icon-gray {
+    color: rgb(134, 129, 129);
+  }
+
+  .dashboard-title {
+    
+    margin-right: 10px; /* Adjust the margin to separate the title and divider */
+    font-size: 3em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: gray;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+
+  .to-do-title {
+    text-align: left;
+    padding-left: 10px;
+    color: black;
+    padding-top: 57px; /* Adjust the margin to separate the title and divider */
+  }
+
+  .divider {
+    width: 100%; /* Set the width to 100% to span the entire width of the container */
+    border-top: 1px solid #000;
+  }
+
+  .title-divider {
+    text-align: center; /* Center the titles and dividers horizontally */
+  }
+
+  .card-container {
+    padding-left: 20px;
+    padding-top: 30px;
+  }
+
+  .todo-container {
+    margin-top: 20px;
+  }
+
+  .dashboard-body {
+    margin-left: 10px;
+  }
+
+  .published-course {
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 20px;
+
+  }
+
+  .add-new-course {
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+    gap: 10px;
+
+  }
+
+  .new-course-inputArea {
+    border-radius: 5px;
+    border-color: rgb(198, 194, 194);
+    padding-left: 10px;
+    width: 180px;
+  }
+
+  .add-course-bt {
+    background-color: rgb(174, 21, 21);
+    width: 80px;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    
+  }
+
+  .update-course-bt {
+    background-color: rgb(226, 224, 224);
+    width: 80px;
+    text-align: center;
+    color: black;
+    border-width: 1px;
+    border-radius: 5px;
+    
+  }
+
+  .edit-course-bt {
+    background-color: rgb(226, 224, 224);
+    width: 100px;
+    text-align: center;
+    color: black;
+    border-width: 1px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  .delete-course-bt {
+    background-color: rgb(226, 224, 224);
+    width: 100px;
+    text-align: center;
+    color: black;
+    border-width: 1px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+
+
+
+
+  
+
+  
+
+  
+

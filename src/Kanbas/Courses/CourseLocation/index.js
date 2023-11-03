@@ -4,12 +4,13 @@ import db from "../../Database";
 import { BsList } from "react-icons/bs";
 import { AiOutlineRight } from "react-icons/ai";
 import "./index.css";
+import { BiGlassesAlt } from "react-icons/bi"
 
-function CourseLocation() {
+function CourseLocation({courses}) {
     const { courseId } = useParams();
     const {pathname} = useLocation();
-    const [empty, kanbas, courses, id, screen] = pathname.split("/");
-    const course = db.courses.find((course) => course._id === courseId);
+    const [empty, kanbas, courses_screen, id, screen] = pathname.split("/");
+    const course = courses.find((course) => course._id === courseId);
 
     return(
 
@@ -29,6 +30,17 @@ function CourseLocation() {
         <div className="text2">
             {screen}
         </div>
+
+        <div className="student-view-bt">
+            <button className="student-view">
+                <BiGlassesAlt className="student-view-ic" />
+                Student View
+            </button>
+        </div>
+
+    
+
+  
     </div>
 
     );

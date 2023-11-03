@@ -4,11 +4,12 @@
     color: rgb(83, 80, 80);
     border: 1px solid gray;
     margin: 5px;
-    text-align: left; /* Add margin for spacing between buttons */
+    text-align: left;
+    border-radius: 5px; /* Add margin for spacing between buttons */
   }
 
   .divider {
-    width: 220px;
+    width: 80px;
   }
 
   .to-do-title {
@@ -26,4 +27,8 @@
 
   .icon-gray {
     color: rgb(134, 129, 129);
+  }
+
+  .buttons {
+    padding-top: 30px;
   }

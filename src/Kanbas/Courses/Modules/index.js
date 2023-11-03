@@ -1,5 +1,6 @@
 import ModuleList from "./ModuleList";
 import Status from "../Status/index.js";
+import "./ModuleList.css";
 
 function Modules() {
   return (

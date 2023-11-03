@@ -1,0 +1,105 @@
+.assignment-title {
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+}
+
+.search-input-area {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+}
+.search-input {
+    border-color: lightgray;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+}
+
+.search-bt-bar {
+    display: flex;
+}
+
+.group-bt {
+    padding-left: 350px;
+    padding-top: 5px;
+}
+
+.group-bt-detail {
+    background-color: rgb(242, 239, 239);
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    color: black;
+    border-width: 1px;
+    border-color: gray;
+}
+
+.add-assignment-bt {
+    padding-top: 5px;
+    margin-left: 5px;
+}
+
+.add-assignment {
+    background-color: rgb(171, 21, 21);
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    color: white;
+    border-width: 1px;
+    border-color: gray;
+}
+
+.dots-container {
+    padding-top: 5px;
+    margin-left: 5px;
+}
+
+.dots-bt {
+    width: 30px;
+    height: 40px;
+    background-color: rgb(242, 239, 239);
+    border-width: 1px;
+    border-color: gray;
+    border-radius: 5px;
+    color: gray;
+}
+
+.assignment-container {
+    display: flex;
+    height: 50px;
+    padding-left: 30px;
+}
+
+.assignment-dots {
+    padding-top: 15px;
+}
+
+.assignment-link {
+    padding-left: 10px;
+    padding-top: 15px;
+    flex: 1;
+}
+
+.list-item {
+    border: 1px solid #ccc; /* Add your desired border styles here */
+    padding: 10px; /* Optional: Add padding for spacing */
+    margin: 10px 0; /* Optional: Add margin for spacing between items */
+  }
+
+  .delete-bt-container {
+    padding-right: 270px;
+
+  }
+
+  .delete-bt {
+    width: 70px;
+    height: 40px;
+    border-width: 1px;
+    border-color: gray;
+    border-radius: 5px;
+    background-color: rgb(171, 21, 21);
+    color: white;
+
+  }
+  

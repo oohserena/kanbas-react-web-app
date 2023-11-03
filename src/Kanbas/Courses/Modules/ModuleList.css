@@ -21,4 +21,107 @@
     text-align: left; /* Add margin for spacing between buttons */
   }
 
+.module-container {
+  padding-top: 20px;
+}
+
+.add-area-container {
+  padding-left: 10px;
+  padding-top: 20px;
+  display: flex;
+}
+
+.module-divider {
+  margin-top: 10px;
+ 
+}
+
+.input-module-name {
+  border-color: lightgray;
+  width: 200px;
+  height: 50px; /* Set text alignment to left */
+  text-align: left;
+}
+
+.text-area-module-descrip {
+  padding-left: 20px;
+  
+  
+}
+
+.text-area {
+  height: 50px;
+  width: 350px;
+}
+
+.add-module-bt-container {
+  padding-left: 30px;
+ 
+}
+
+.add-module-button {
+  margin-left: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(171, 21, 21);
+  color: white;
+  text-align: center;
+  width: 80px;
+  height: 40px;
+}
+
+.update-module-bt {
+  border: none;
+  background-color: rgb(234, 232, 232);
+  color: black;
+  border-radius: 5px;
+  width: 80px;
+  height: 40px;
+  margin-left: 30px;
+
+}
+
+.edit-module-bt {
+  margin-left: 30px;
+  border: none;
+  background-color: rgb(234, 232, 232);
+  color: black;
+  border-radius: 5px;
+  width: 80px;
+  height: 40px;
+  margin-right: 10px;
+
+}
+
+.module-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-bt-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px; 
+  margin-right: 5px;/* Use margin-left: auto to push the delete button to the right */
+}
+
+/* Other CSS styles */
+
+.delete-bt {
+  background-color: rgb(171, 21, 21);
+  color: white;
+  border: none;
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  margin-left: 10px;
+
+}
+
+
+
+
+
   
