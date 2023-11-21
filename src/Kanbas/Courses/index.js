@@ -11,8 +11,9 @@ import Grades from "./Grades";
 
 function Courses({ courses }) {
   const { courseId } = useParams();
+  
 
-  const URL = `http://localhost:4000/api/courses/${courseId}`;
+  const URL = `https://kanbas-node-server-app-sdvg.onrender.com/api/courses/${courseId}`;
   console.log("Course ID:", courseId);
   const [course, setCourse] = useState({});
   const [loading, setLoading] = useState(true);
