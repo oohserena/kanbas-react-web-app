@@ -17,7 +17,7 @@ function Kanbas() {
 
   // const URL = "http://localhost:4000/api/courses";
   // const API_BASE = process.env.REACT_APP_API_BASE;
-  const URL = `${process.env.REACT_APP_API_BASE}/courses`;
+  const URL = "https://kanbas-node-server-app-sdvg.onrender.com/api/courses";
   
   const deleteCourse = async (course) => {
     if (!course || !course._id) {

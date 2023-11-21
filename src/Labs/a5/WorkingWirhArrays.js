@@ -9,8 +9,11 @@ function WorkingWithArrays() {
         due: "2021-09-09",
         completed: false,
       });
+
+    const API_BASE = process.env.REACT_APP_API_BASE;
+    const URL = `${API_BASE}/a5`
     
-    const API = "http://localhost:4000/a5/todos";
+    const API = `${URL}/todos`;
     const [todos, setTodos] = useState([]);
     const [errorMessage, setErrorMessage] = useState(null);
     const postTodo = async () => {
