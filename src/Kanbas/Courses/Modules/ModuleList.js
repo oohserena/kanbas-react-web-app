@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 import { useParams } from "react-router-dom";
 import "./ModuleList.css";
 import { useSelector, useDispatch } from "react-redux";
@@ -7,50 +7,68 @@ import {
   deleteModule,
   updateModule,
   setModule,
+  setModules
 } from "./modulesReducer";
+import * as client from "./client";
 
 function ModuleList() {
   const { courseId } = useParams();
+  useEffect(() => {
+    client.findModulesForCourse(courseId)
+      .then((modules) =>
+        dispatch(setModules(modules))
+    );}, [courseId]);
+
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
   const [newModuleName, setNewModuleName] = useState("");
   const [newModuleDescription, setNewModuleDescription] = useState("");
 
+  const handleUpdateModule = async () => {
+    const updatedModule = {
+      ...module,
+      name: newModuleName,
+      description: newModuleDescription,
+    };
+  
+    try {
+      const response = await client.updateModule(module._id, updatedModule);
+  
+      if (response && response.status === 200) {
+        // Update the Redux store with the updated module
+        dispatch(updateModule(updatedModule));
+        // Clear input fields
+        setNewModuleName("");
+        setNewModuleDescription("");
+      } else {
+        console.error("Failed to update module. Unexpected response:", response);
+      }
+    } catch (error) {
+      console.error("Error updating module:", error);
+    }
+  };
+  
+  
+  
+  
+  const handleDeleteModule = (moduleId) => {
+    client.deleteModule(moduleId).then((status) => {
+      dispatch(deleteModule(moduleId));
+    });
+  };
+
+
   const handleAddModule = () => {
-    if (newModuleName.trim() === "" || newModuleDescription.trim() === "") {
-      return;
-    }
-
-    if (module._id !== null) {
-      // If a module is being edited, update it
-      dispatch(
-        updateModule({
-          _id: module._id,
-          course: courseId,
-          name: newModuleName,
-          description: newModuleDescription,
-        })
-      );
-      dispatch(setModule({ _id: null, name: "", description: "" }));
-    } else {
-      // Otherwise, add a new module
-      dispatch(
-        addModule({
-          course: courseId,
-          name: newModuleName,
-          description: newModuleDescription,
-        })
-      );
-    }
-
-    setNewModuleName("");
-    setNewModuleDescription("");
+    client.createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
   };
 
-  const deleteModuleHandler = (moduleId) => {
-    dispatch(deleteModule(moduleId));
-  };
+
+  // const deleteModuleHandler = (moduleId) => {
+  //   dispatch(deleteModule(moduleId));
+  // };
 
   const editModule = (module) => {
     dispatch(setModule(module));
@@ -82,7 +100,7 @@ function ModuleList() {
         </div>
 
         <div className="add-module-bt-container">
-          <button className="update-module-bt" onClick={handleAddModule}>
+          <button className="update-module-bt" onClick={handleUpdateModule}>
             Update
           </button>
           <button className="add-module-button" onClick={handleAddModule}>
@@ -106,7 +124,7 @@ function ModuleList() {
                   <button className="edit-module-bt" onClick={() => editModule(module)}>
                     Edit
                   </button>
-                  <button className="delete-bt" onClick={() => deleteModuleHandler(module._id)}>
+                  <button className="delete-bt" onClick={() => handleDeleteModule(module._id)}>
                     Delete
                   </button>
                 </div>

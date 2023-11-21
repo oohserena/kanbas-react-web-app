@@ -1,21 +1,24 @@
 // AssignmentsEditor.js
 import React, { useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { selectAssignment, updateAssignment } from "./assignmentsReducer";
 
 function AssignmentsEditor() {
   const { courseId } = useParams();
-  const assignment = useSelector((state) => state.assignments.selectedAssignment);
+  const assignmentId = useParams().assignmentId;
+  const assignments = useSelector((state) => state.assignments.assignments);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const [editedTitle, setEditedTitle] = useState(assignment.title);
+  // Find the assignment corresponding to assignmentId
+  const assignment = assignments.find((assignment) => assignment._id === assignmentId);
+
+  const [editedAssignment, setEditedAssignment] = useState({ ...assignment });
 
   const handleSave = () => {
-    // Update the assignment title using the action from the reducer
-    const updatedAssignment = { ...assignment, title: editedTitle };
-    dispatch(updateAssignment(updatedAssignment));
+    // Update the assignment using the action from the reducer
+    dispatch(updateAssignment(editedAssignment));
     // Navigate back to the Assignments screen
     navigate(`/Kanbas/Courses/${courseId}/Assignments`);
   };
@@ -27,14 +30,28 @@ function AssignmentsEditor() {
     navigate(`/Kanbas/Courses/${courseId}/Assignments`);
   };
 
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setEditedAssignment({
+      ...editedAssignment,
+      [name]: value,
+    });
+  };
+
   return (
     <div>
       <h3>Edit Assignment</h3>
-      <input
-        value={editedTitle}
-        onChange={(e) => setEditedTitle(e.target.value)}
-        className="form-control mb-2"
-      />
+      <div>
+        <label>Title:</label>
+        <br />
+        <input
+          type="text"
+          name="title"
+          value={editedAssignment.title}
+          onChange={handleInputChange}
+          className="form-control mb-2"
+        />
+      </div>
       <button onClick={handleSave} className="btn btn-success me-2">
         Save
       </button>

@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { PiDotsSixVerticalBold } from "react-icons/pi";
 import { BiDotsVerticalRounded } from "react-icons/bi";
 import "./index.css";
 import "./AssignmentEditor.css";
 import { useSelector, useDispatch } from "react-redux";
-import { addAssignment, deleteAssignment } from "./assignmentsReducer";
+import { addAssignment, deleteAssignment, setAssignments } from "./assignmentsReducer";
 import AssignmentsEditor from "./AssignmentsEditor";
+import { findAssignmentsForCourse  } from "./client";
+import { createAssignment } from "./client";
+
 
 function AssignmentEditor({ setShowAssignmentEditor }) {
   
@@ -24,6 +27,24 @@ function AssignmentEditor({ setShowAssignmentEditor }) {
     course: courseId,
   });
 
+  useEffect(() => {
+    findAssignmentsForCourse(courseId).then((assignments) =>
+    dispatch(setAssignments(assignments)));
+  }, [courseId])
+
+  const handleSave = () => {
+    createAssignment(courseId, newAssignment)
+      .then((createdAssignment) => {
+        dispatch(addAssignment(createdAssignment));
+        setShowAssignmentEditor(false);
+      })
+      .catch((error) => {
+        // Handle error if needed
+        console.error("Error creating assignment:", error);
+      });
+  };
+  
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setNewAssignment({
@@ -32,10 +53,10 @@ function AssignmentEditor({ setShowAssignmentEditor }) {
     });
   };
 
-  const handleSave = () => {
-    dispatch(addAssignment(newAssignment));
-    setShowAssignmentEditor(false);
-  };
+  // const handleSave = () => {
+  //   dispatch(addAssignment(newAssignment));
+  //   setShowAssignmentEditor(false);
+  // };
 
   const handleCancel = () => {
     setShowAssignmentEditor(false);

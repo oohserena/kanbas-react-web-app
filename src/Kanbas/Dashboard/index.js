@@ -4,24 +4,28 @@ import Todo from "./ToDo/Todo";
 import "./index.css";
 
 function Dashboard(
+
   {
-    courses, 
-    newCourseTitle, 
-    newCourseNumber, 
-    newCourseStartDate, 
-    newCourseEndDate, 
-    setNewCourseTitle, 
-    setNewCourseNumber, 
-    setNewCourseStartDate, 
-    setNewCourseEndDate, 
-    setEditedCourse, 
-    addNewCourse, 
-    deleteCourse, 
-    updateCourse
+    courses,
+    newCourseTitle,
+    newCourseNumber,
+    newCourseStartDate,
+    newCourseEndDate,
+    setNewCourseTitle,
+    setNewCourseNumber,
+    setNewCourseStartDate,
+    setNewCourseEndDate,
+    setEditedCourse,
+    editedCourse,
+    addNewCourse,
+    deleteCourse,
+    updateCourse,
+    updateState,
   }
+)
+  
+{
 
-
-) {
 
   return (
     <div className="row">
@@ -40,6 +44,9 @@ function Dashboard(
         newCourseNumber={newCourseNumber}
         newCourseStartDate={newCourseStartDate}
         newCourseEndDate={newCourseEndDate}
+        editedCourse={editedCourse}
+        updateState={updateState}
+        
 />
       </div>
       <div className="col-md-2">
