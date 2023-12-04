@@ -4,14 +4,24 @@ import * as client from "./client";
 import { BsTrash3Fill, BsFillCheckCircleFill, BsPencil, BsPlusCircleFill } from "react-icons/bs";
 
 function UserTable() {
+  const initialUserState = { username: "", password: "", role: "USER", firstName: "", lastName: "" };
   const [users, setUsers] = useState([]);
-  const [user, setUser] = useState({ username: "", password: "", role: "USER" });
+  const [user, setUser] = useState(initialUserState);
+
+
   const createUser = async () => {
-    try {
-      const newUser = await client.createUser(user);
-      setUsers([newUser, ...users]);
-    } catch (err) {
-      console.log(err);
+    if (user._id) {
+      // User has an ID, should update instead
+      updateUser();
+    } else {
+      // Create new user
+      try {
+        const newUser = await client.createUser(user);
+        setUsers([newUser, ...users]);
+        setUser(initialUserState); // Reset user state after creation
+      } catch (err) {
+        console.log(err);
+      }
     }
   };
 
@@ -27,6 +37,7 @@ function UserTable() {
     try {
       const status = await client.updateUser(user);
       setUsers(users.map((u) => (u._id === user._id ? user : u)));
+      setUser(initialUserState); // Reset user state after update
     } catch (err) {
       console.log(err);
     }
